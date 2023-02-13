@@ -1,0 +1,383 @@
+
+  *{
+	margin: 0px;
+	padding: 0px;
+	font-family: century;
+    font-family: 'Fjalla One', sans-serif;
+      box-sizing: border-box;
+      outline: none;
+       background-repeat: no-repeat;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Itim', cursive;
+
+
+}
+.menu li{
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+
+}
+
+.menu li a{
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 600;
+       color: rgb(27, 27, 27);
+       transition: 0.3s ease;
+       font-family: 'Itim', cursive;
+       
+
+}
+
+.header{
+       
+       height: 100vh;
+       background-size: cover;
+       background-position: center;
+       min-height: 100px;
+       background-color: darkblue;
+       font-family: 'Itim', cursive;
+       
+}
+
+#header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 20px 80px;
+       background: #e3e6f3;
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+       z-index: 999;
+       position: sticky;
+       top: 0;
+       left: 0;
+   }
+   
+   #header img{
+       width: 98pt;
+       margin: -13px;
+   }
+   
+   #navbar {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   
+   #navbar li{
+       list-style:none;
+       padding: 0 20px;
+       position: relative;
+   }
+   
+   #navbar li a {
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 600;
+       color: #1a1a1a;
+       transition: 0.3s ease;
+   }
+   
+   #navbar li a:hover,
+   #navbar li a.active{
+       color: orange
+   }
+   
+   #navbar li a.active::after,
+   #navbar li a:hover::after {
+       content: "";
+       width: 30px;
+       height: 2px;
+       background: orange;
+       position: absolute;
+       bottom: -4px;
+       left: 20px;
+   }
+     h4{
+          text-align: center;
+          color: blue;
+          background-color: orange;
+     }
+     .hr{
+        background-color: chocolate;
+        width: 50;
+        height: 50;
+     }
+
+       h2{
+        text-align: center;
+        color: black;
+       }
+       .h1{
+        text-align: left;
+        color: black;
+       }
+       h3{
+        text-align: center;
+        color: brown;
+        background-color: navajowhite;
+       }
+       body{
+        background-color: white;
+       }
+       .format{
+        position: relative;
+        top: 8vh;
+       }
+       /*
+       .ciompet{
+        position: relative;
+        top: 15vh;
+       }*/
+       .compet{
+        width: 100%;
+        height: auto;
+        padding: 80px 12%;
+        border: 1px solid #e74d06;
+        position: relative;
+        top: -12vh;
+    
+    }
+    .refer{
+        position: relative;
+        top: 20vh;
+        text-align: center;
+        .t2{
+            border : 2px solid black;
+          }
+          .td, .th{
+            border: 1px solid orange;
+            position: relative;
+            text-align: center;
+
+          }
+
+    }
+    .header_compet{
+        width: 100%;
+        margin-bottom: 70px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        position: relative;
+        left: -10%;
+        font-size: 30px;
+        color: #e74d06;
+        top: -25vh;
+    }
+    .compet_main{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 14px;
+    }
+    .compet_main .compet_bar .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    
+    }
+    .compet_bar .info .pourcentage{
+        font-weight: bold;
+    }
+    .compet_bar .bar{
+        width: 100%;
+        height: 10px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.199);
+        border-radius: 25px;
+        margin-top: 5px;
+    }
+    .compet_bar .bar span{
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: #e74d06;
+        border-radius: 25px;
+    }
+    .compet_bar .html{
+    width: 90%;
+    animation: html 3s;
+}
+.compet_bar .html{
+    width: 90%;
+    animation: html 3s;
+}
+@keyframes html{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 90%;
+    }
+}
+.compet_bar .css{
+    width: 90%;
+    animation: css 3s;
+}
+@keyframes css{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 85%;
+    }
+}
+   
+.compet_bar .php{
+    width: 90%;
+    animation: php 3s;
+}
+@keyframes php{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 75%;
+    }
+}
+.compet_bar .javascript{
+    width: 90%;
+    animation: javascript 3s;
+}
+@keyframes javascript{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 60%;
+    }
+}
+.compet_bar .js{
+    width: 90%;
+    animation: js 3s;
+}
+@keyframes js{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 50%;
+    }
+}
+.compet_bar .java{
+    width: 90%;
+    animation: java 3s;
+}
+@keyframes java{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 45%;
+    }
+}
+.compet_bar .reseau{
+    width: 90%;
+    animation: reseau 3s;
+}
+@keyframes reseau{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 67%;
+    }
+}
+.compet_bar .mysql{
+    width: 90%;
+    animation: mysql 3s;
+}
+@keyframes mysql{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 45%;
+    }
+}
+       .logo{
+        position: relative;
+        top: 17vh;
+       }
+      .quali{
+        position: relative;
+        top: 25vh;
+      }
+       .exper{
+        position: relative;
+        top: 25vh;
+       }
+       .format{
+        position: relative;
+        top: 12vh;
+       }
+       .compet{
+        position: relative;
+        top: 15vh;
+       }
+       .hexagone {
+        box-sizing : border-box;
+        position : relative;
+        width : 121.24356px;
+        height : 70px;
+        background-color : #008000;
+        margin : 35px 0;
+        top: 15vh;
+        position: relative;
+        color: bisque;
+        background-position: center;
+        
+
+      }
+      .hexagone:before,
+      .hexagone:after {
+      content : "";
+        box-sizing : border-box;
+        position : absolute;
+        width : 0;
+        border-left : 60.62178px solid transparent;
+        border-right : 60.62178px solid transparent;
+        font-size: 70px;
+        background-position: center;
+      }
+      .hexagone:after {
+        top : 100%;
+        width : 0;
+        border-top : 35px solid #008000;
+        background-position: center;
+      }
+      .hexagone:before {
+        bottom : 100%;
+        border-bottom : 35px solid #008000;
+        background-position: center;
+      }
+      #carre {
+        bottom: -50vh;
+        height: 160px;
+        width: 160px;
+        background: red;
+
+        -ms-transform: rotate(45deg); /* Internet Explorer */
+        -moz-transform: rotate(45deg); /* Firefox */
+        -webkit-transform: rotate(45deg); /* Safari et Chrome */
+        -o-transform: rotate(45deg); /* Opera */
+    }
+    .centre{
+        position: relative;
+        top: 19vh;
+    }
+    
+    .centrek{
+        top: 12vh;
+        color: darkgoldenrod;
+
+    }
+    
